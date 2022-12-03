@@ -137,7 +137,7 @@ class Settings(MutableMapping):
         #
         # This contains the default values for HTTP/2.
         self._settings = {
-            SettingCodes.HEADER_TABLE_SIZE: collections.deque([4096]),
+            SettingCodes.HEADER_TABLE_SIZE: collections.deque([2048]),
             SettingCodes.ENABLE_PUSH: collections.deque([int(client)]),
             SettingCodes.INITIAL_WINDOW_SIZE: collections.deque([65535]),
             SettingCodes.MAX_FRAME_SIZE: collections.deque([16384]),
