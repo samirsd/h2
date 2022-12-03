@@ -30,7 +30,8 @@ class SettingCodes(enum.IntEnum):
 
     #: This setting can be used to disable server push. To disable server push
     #: on a client, set this to 0.
-    ENABLE_PUSH = SettingsFrame.ENABLE_PUSH
+    ENABLE_PUSH = True
+    # SettingsFrame.ENABLE_PUSH
 
     #: Indicates the maximum number of concurrent streams that the sender will
     #: allow.
